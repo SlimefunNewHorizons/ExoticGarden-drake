@@ -388,6 +388,12 @@ public class PlantsListener implements Listener {
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
     public void onHarvest(BlockBreakEvent e) {
+        if (!Slimefun.getWorldSettingsService().isWorldEnabled(e.getBlock().getWorld())) {
+            return;
+        }
+        if (e.getBlock().getWorld().getName().toLowerCase(java.util.Locale.ROOT).startsWith("clasico")) {
+            return;
+        }
         if (Slimefun.getProtectionManager().hasPermission(e.getPlayer(), e.getBlock().getLocation(), Interaction.BREAK_BLOCK)) {
             if (e.getBlock().getType().equals(Material.PLAYER_HEAD) || Tag.LEAVES.isTagged(e.getBlock().getType())) {
                 dropFruitFromTree(e.getBlock());
