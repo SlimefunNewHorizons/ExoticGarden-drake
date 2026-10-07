@@ -11,12 +11,12 @@ import org.bukkit.potion.PotionEffectType;
 
 import com.github.drakescraft_labs.exoticgarden.CustomPotion;
 import com.github.drakescraft_labs.exoticgarden.ExoticGarden;
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
-import com.github.drakescraft_labs.slimefun4.implementation.items.food.Juice;
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.implementation.items.food.Juice;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 
 /**
  * In plugin class we register all our items and recipes for the dishes.

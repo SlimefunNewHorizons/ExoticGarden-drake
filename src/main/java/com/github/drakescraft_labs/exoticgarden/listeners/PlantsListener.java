@@ -42,13 +42,13 @@ import com.github.drakescraft_labs.exoticgarden.PlantType;
 import com.github.drakescraft_labs.exoticgarden.Tree;
 import com.github.drakescraft_labs.exoticgarden.schematics.Schematic;
 import com.github.drakescraft_labs.exoticgarden.items.BonemealableItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.protection.Interaction;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.skins.PlayerHead;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.skins.PlayerSkin;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerHead;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerSkin;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 import io.papermc.lib.PaperLib;
 

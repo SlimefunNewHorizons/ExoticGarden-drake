@@ -6,7 +6,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
 import com.github.drakescraft_labs.exoticgarden.ExoticGarden;
-import com.github.drakescraft_labs.slimefun4.api.events.AndroidFarmEvent;
+import io.github.thebusybiscuit.slimefun4.api.events.AndroidFarmEvent;
 
 public class AndroidListener implements Listener {
 

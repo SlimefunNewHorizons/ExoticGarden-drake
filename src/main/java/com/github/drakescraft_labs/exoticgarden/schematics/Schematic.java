@@ -20,10 +20,10 @@ import com.github.drakescraft_labs.exoticgarden.schematics.org.jnbt.CompoundTag;
 import com.github.drakescraft_labs.exoticgarden.schematics.org.jnbt.NBTInputStream;
 import com.github.drakescraft_labs.exoticgarden.schematics.org.jnbt.ShortTag;
 import com.github.drakescraft_labs.exoticgarden.schematics.org.jnbt.Tag;
-import com.github.drakescraft_labs.slimefun4.utils.tags.SlimefunTag;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.skins.PlayerHead;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.skins.PlayerSkin;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
+import io.github.thebusybiscuit.slimefun4.utils.tags.SlimefunTag;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerHead;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerSkin;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 /*
  *

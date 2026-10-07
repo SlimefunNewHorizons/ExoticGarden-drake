@@ -9,7 +9,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
 public class Berry {
 
