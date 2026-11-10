@@ -386,7 +386,7 @@ public class PlantsListener implements Listener {
         return true;
     }
 
-    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
+    @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
     public void onHarvest(BlockBreakEvent e) {
         if (!Slimefun.getWorldSettingsService().isWorldEnabled(e.getBlock().getWorld())) {
             return;
@@ -399,11 +399,12 @@ public class PlantsListener implements Listener {
                 dropFruitFromTree(e.getBlock());
             }
 
-            if (e.getBlock().getType() == Material.SHORT_GRASS) {
+            Material mat = e.getBlock().getType();
+            if (mat == Material.SHORT_GRASS || mat == Material.FERN || mat == Material.LARGE_FERN || mat == Material.TALL_GRASS) {
                 if (!ExoticGarden.getGrassDrops().keySet().isEmpty() && e.getPlayer().getGameMode() != GameMode.CREATIVE) {
                     Random random = ThreadLocalRandom.current();
 
-                    if (random.nextInt(100) < 6) {
+                    if (random.nextInt(100) < 10) {
                         ItemStack[] items = ExoticGarden.getGrassDrops().values().toArray(new ItemStack[0]);
                         e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), items[random.nextInt(items.length)]);
                     }

@@ -117,6 +117,12 @@ public class ExoticGarden extends JavaPlugin implements SlimefunAddon {
         drinksItemGroup = new SubItemGroup(new NamespacedKey(this, "drinks"), nestedItemGroup, new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode("2a8f1f70e85825607d28edce1a2ad4506e732b4a5345a5ea6e807c4b313e88")), "&aExotic Garden - Drinks"));
         magicalItemGroup = new SubItemGroup(new NamespacedKey(this, "magical_crops"), nestedItemGroup, new CustomItemStack(Material.BLAZE_POWDER, "&5Exotic Garden - Magical Plants"));
 
+        mainItemGroup.register(this);
+        miscItemGroup.register(this);
+        foodItemGroup.register(this);
+        drinksItemGroup.register(this);
+        magicalItemGroup.register(this);
+
         kitchen = new Kitchen(this, miscItemGroup);
         kitchen.register(this);
         Research kitchenResearch = new Research(new NamespacedKey(this, "kitchen"), 600, "Kitchen", 30);
